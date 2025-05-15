@@ -1,0 +1,35 @@
+name: flutter_application_3
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.7.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # —— 網路請求 ——
+  http: ^0.13.6         # 輕量 REST 需求（登入 / 註冊）
+  dio: ^5.8.0+1         # 若後續需要更進階功能（攔截器、上傳進度）
+
+  # —— 本地/雲端檔案 ——
+  file_picker: ^6.1.1   # 選檔 / 上傳
+
+  # —— 狀態管理 ——
+  provider: ^6.1.1      # 全局共享登入狀態
+
+  # —— 本機資料儲存（選擇性：存 token 用） ——
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  url_launcher: ^6.1.14
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
